@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weather app</title>
+    <title>weatherapp</title>
     <meta name="title" content="weatherio" />
-    <meta name="description" content="weatherio is a weather app" />
+    <meta name="description" content="weatherapp is a weather app" />
     <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -89,7 +89,38 @@
       </div>
     </header>
     <main>
-      <article class="container"></article>
+      <article class="container">
+        <div class="contentleft">
+          <section
+            class="section current-weather"
+            aria-label="current weather"
+            data-current-weather
+          >
+            <div class="card card-lg current-weather-card">
+              <h2 class="title-2 card-title">Now</h2>
+              <div class="weapper">
+                <p class="heading">25&deg;<sup>c</sup></p>
+                <img
+                  src="./assets/images/weather_icons/01d.png"
+                  alt="overcast clouds"
+                  class="weather-icon"
+                />
+              </div>
+              <p class="body-3">Overcast clouds</p>
+              <ul class="meta-list">
+                <li class="meta-item">
+                  <span class="m-icon">calendar_today</span>
+                  <p class="title-3 meta-text">Thursday 16, Feb</p>
+                </li>
+                <li class="meta-item">
+                  <span class="m-icon">location_on</span>
+                  <p class="title-3 meta-text">London, GB</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </article>
     </main>
   </body>
 </html>
